@@ -1,0 +1,14 @@
+{
+  "name": "bettercallzisa",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun --hot server.ts",
+    "start": "bun server.ts"
+  },
+  "dependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

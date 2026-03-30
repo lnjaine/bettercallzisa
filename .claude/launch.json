@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "bettercallzisa",
+      "runtimeExecutable": "bun",
+      "runtimeArgs": ["--hot", "server.ts"],
+      "port": 3000,
+      "cwd": "/Users/webdraw/conductor/repos/bettercallzisa"
+    }
+  ]
+}
