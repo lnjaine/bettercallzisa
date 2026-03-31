@@ -23,20 +23,13 @@ export function About({ whatsappUrl }: { whatsappUrl: string }) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Photo placeholder */}
+          {/* Photo */}
           <div className="flex justify-center">
-            <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-saul-yellow/20 to-saul-orange/20 flex items-center justify-center border-2 border-saul-yellow/30">
-                <span className="font-display text-7xl md:text-8xl text-saul-yellow">Z</span>
-              </div>
-              {/* Decorative seal */}
-              <div className="absolute -bottom-2 -right-2 w-20 h-20 rounded-full bg-saul-darker border-2 border-saul-yellow flex items-center justify-center">
-                <div className="text-center">
-                  <span className="font-display text-saul-yellow text-xs block">EST.</span>
-                  <span className="font-display text-saul-yellow text-sm block">AI</span>
-                </div>
-              </div>
-            </div>
+            <img
+              src="/zisa.png"
+              alt="Zisa — Better Call Zisa"
+              className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-2 border-saul-yellow/30"
+            />
           </div>
 
           {/* Bio */}
