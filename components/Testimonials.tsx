@@ -14,8 +14,8 @@ const testimonials = [
     quote:
       "We had a product to identify ads from our live broadcasts. For months, we couldn't get it to actually work. Multiple attempts, nothing stuck. Zisa made it work in less than a week. That's the kind of engineer you want on your side.",
     name: "Carol Bezerra",
-    role: "Kazé TV",
-    company: "Kazé TV",
+    role: "Cazé TV",
+    company: "Cazé TV",
     verdict: "FIXED IN DAYS, NOT MONTHS",
     linkedin: "https://www.linkedin.com/in/carol-bezerra-75319822/",
   },
