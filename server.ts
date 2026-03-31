@@ -2,14 +2,14 @@ import homepage from "./index.html";
 import { resolve, dirname } from "path";
 
 const dir = dirname(new URL(import.meta.url).pathname);
-const zisaPath = resolve(dir, "public/zisa.png");
+const zisaPath = resolve(dir, "public/zisa.jpg");
 
 const server = Bun.serve({
   port: process.env.PORT || 3000,
   routes: {
     "/": homepage,
-    "/zisa.png": new Response(await Bun.file(zisaPath).bytes(), {
-      headers: { "Content-Type": "image/png", "Cache-Control": "public, max-age=31536000" },
+    "/zisa.jpg": new Response(await Bun.file(zisaPath).bytes(), {
+      headers: { "Content-Type": "image/jpeg", "Cache-Control": "public, max-age=31536000" },
     }),
   },
   development: {

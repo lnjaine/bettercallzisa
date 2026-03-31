@@ -26,7 +26,7 @@ export function About({ whatsappUrl }: { whatsappUrl: string }) {
           {/* Photo */}
           <div className="flex justify-center">
             <img
-              src="/zisa.png"
+              src="/zisa.jpg"
               alt="Zisa — Better Call Zisa"
               className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-2 border-saul-yellow/30"
             />
