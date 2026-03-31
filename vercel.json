@@ -1,5 +1,5 @@
 {
-  "buildCommand": "bun build index.html --outdir=dist",
+  "buildCommand": "bun build index.html --outdir=dist && cp -r public/* dist/",
   "outputDirectory": "dist",
   "installCommand": "bun install"
 }
