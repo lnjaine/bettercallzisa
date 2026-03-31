@@ -2,7 +2,7 @@ import React from "react";
 
 export function Hero({ whatsappUrl }: { whatsappUrl: string }) {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 md:pt-32">
       {/* Decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-saul-yellow/5 rounded-full blur-3xl" />
@@ -13,9 +13,9 @@ export function Hero({ whatsappUrl }: { whatsappUrl: string }) {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 border border-saul-yellow/40 rounded-full px-4 py-1.5 mb-8">
-          <span className="w-2 h-2 bg-saul-yellow rounded-full animate-pulse" />
-          <span className="text-saul-yellow text-sm font-medium uppercase tracking-wider">
+        <div className="inline-flex items-center gap-3 border-2 border-saul-yellow/50 bg-saul-yellow/10 rounded-full px-6 py-2.5 mb-10">
+          <span className="w-3 h-3 bg-saul-yellow rounded-full animate-pulse" />
+          <span className="text-saul-yellow text-base font-bold uppercase tracking-widest">
             Available now. Problem? Gone.
           </span>
         </div>
