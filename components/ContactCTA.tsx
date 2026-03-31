@@ -8,11 +8,12 @@ export function ContactCTA({ whatsappUrl }: { whatsappUrl: string }) {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(0,0,0,0.1),transparent)]" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        {/* Decorative seal */}
         <div className="flex justify-center mb-8">
-          <div className="w-16 h-16 rounded-full border-2 border-saul-darker/30 flex items-center justify-center">
-            <span className="font-display text-saul-darker text-2xl">⚖️</span>
-          </div>
+          <img
+            src="/zisa.jpg"
+            alt="Zisa"
+            className="w-24 h-24 rounded-full object-cover border-2 border-saul-darker/30 shadow-lg"
+          />
         </div>
 
         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-saul-darker uppercase tracking-wider mb-6">
