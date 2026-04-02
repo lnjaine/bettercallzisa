@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Better Call Zisa — O Melhor Engenheiro Disponível</title>
+  <meta name="description" content="Tem um problema cabeludo? Já era. Produção pegando fogo? Código legado? Prazo impossível? Sem perguntas. Diz o preço. Problema some." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Better Call Zisa — O Melhor Engenheiro Disponível" />
+  <meta property="og:description" content="Produção pegando fogo? Código legado? Prazo impossível? Sem perguntas. Diz o preço. Problema some." />
+  <meta property="og:image" content="https://bettercallzisa.com/zisa.jpg" />
+  <meta property="og:url" content="https://bettercallzisa.com/br" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Better Call Zisa — O Melhor Engenheiro Disponível" />
+  <meta name="twitter:description" content="Produção pegando fogo? Código legado? Prazo impossível? Sem perguntas. Diz o preço. Problema some." />
+  <meta name="twitter:image" content="https://bettercallzisa.com/zisa.jpg" />
+  <link rel="icon" id="favicon" type="image/jpeg" />
+  <script>document.getElementById('favicon').href = '/zisa.jpg';</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            saul: {
+              yellow: '#FFC107',
+              orange: '#FF9800',
+              gold: '#FFB300',
+              dark: '#1A1A2E',
+              darker: '#0F0F1A',
+              cream: '#FFF8E1',
+            }
+          },
+          fontFamily: {
+            display: ['Impact', 'Arial Black', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-display { font-family: Impact, 'Arial Black', sans-serif; }
+    .grain {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+<body class="bg-saul-darker text-white grain">
+  <div id="root"></div>
+  <script type="module" src="./app-br.tsx"></script>
+</body>
+</html>

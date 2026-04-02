@@ -9,22 +9,22 @@ import { Testimonials } from "./components/Testimonials";
 import { ContactCTA } from "./components/ContactCTA";
 import { Footer } from "./components/Footer";
 import { WhatsAppButton } from "./components/WhatsAppButton";
-import { en } from "./content";
+import { ptBR } from "./content";
 
 const WHATSAPP_NUMBER = "5521998595821";
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(en.whatsappMessage)}`;
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(ptBR.whatsappMessage)}`;
 
 export default function App() {
   return (
     <>
-      <Navbar whatsappUrl={WHATSAPP_URL} content={en} />
-      <Hero whatsappUrl={WHATSAPP_URL} content={en} />
-      <Services content={en} />
-      <CaseStudies content={en} />
-      <About whatsappUrl={WHATSAPP_URL} content={en} />
-      <Testimonials content={en} />
-      <ContactCTA whatsappUrl={WHATSAPP_URL} content={en} />
-      <Footer content={en} />
+      <Navbar whatsappUrl={WHATSAPP_URL} content={ptBR} />
+      <Hero whatsappUrl={WHATSAPP_URL} content={ptBR} />
+      <Services content={ptBR} />
+      <CaseStudies content={ptBR} />
+      <About whatsappUrl={WHATSAPP_URL} content={ptBR} />
+      <Testimonials content={ptBR} />
+      <ContactCTA whatsappUrl={WHATSAPP_URL} content={ptBR} />
+      <Footer content={ptBR} />
       <WhatsAppButton whatsappUrl={WHATSAPP_URL} />
     </>
   );

@@ -1,14 +1,8 @@
 import React, { useState } from "react";
+import type { Content } from "../content";
 
-export function Navbar({ whatsappUrl }: { whatsappUrl: string }) {
+export function Navbar({ whatsappUrl, content }: { whatsappUrl: string; content: Content }) {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const links = [
-    { href: "#services", label: "What I Fix" },
-    { href: "#evidence", label: "Track Record" },
-    { href: "#counsel", label: "The Engineer" },
-    { href: "#testimony", label: "Results" },
-  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-saul-darker/95 backdrop-blur-sm border-b border-saul-yellow/20">
@@ -20,7 +14,7 @@ export function Navbar({ whatsappUrl }: { whatsappUrl: string }) {
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
-            {links.map((link) => (
+            {content.nav.links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -35,7 +29,7 @@ export function Navbar({ whatsappUrl }: { whatsappUrl: string }) {
               rel="noopener noreferrer"
               className="bg-saul-yellow text-saul-darker font-bold text-sm px-5 py-2 rounded hover:bg-saul-gold transition-colors uppercase tracking-wide"
             >
-              Call Zisa
+              {content.nav.cta}
             </a>
           </div>
 
@@ -60,7 +54,7 @@ export function Navbar({ whatsappUrl }: { whatsappUrl: string }) {
       {menuOpen && (
         <div className="md:hidden bg-saul-dark border-t border-saul-yellow/20">
           <div className="px-4 py-4 space-y-3">
-            {links.map((link) => (
+            {content.nav.links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -76,7 +70,7 @@ export function Navbar({ whatsappUrl }: { whatsappUrl: string }) {
               rel="noopener noreferrer"
               className="block bg-saul-yellow text-saul-darker font-bold text-sm px-5 py-2 rounded text-center uppercase tracking-wide"
             >
-              Call Zisa
+              {content.nav.cta}
             </a>
           </div>
         </div>
