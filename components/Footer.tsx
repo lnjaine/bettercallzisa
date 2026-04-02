@@ -1,6 +1,7 @@
 import React from "react";
+import type { Content } from "../content";
 
-export function Footer() {
+export function Footer({ content }: { content: Content }) {
   return (
     <footer className="py-8 border-t border-saul-yellow/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,7 +15,7 @@ export function Footer() {
             </span>
           </div>
           <p className="text-gray-600 text-xs uppercase tracking-wider">
-            Built with AI, obviously.
+            {content.footer.tagline}
           </p>
         </div>
       </div>
