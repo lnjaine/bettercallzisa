@@ -1,5 +1,8 @@
 {
-  "buildCommand": "bun build index.html --outdir=dist && cp -r public/* dist/",
+  "buildCommand": "bun build index.html index-br.html --outdir=dist && cp -r public/* dist/",
   "outputDirectory": "dist",
-  "installCommand": "bun install"
+  "installCommand": "bun install",
+  "rewrites": [
+    { "source": "/br", "destination": "/index-br.html" }
+  ]
 }
